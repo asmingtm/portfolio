@@ -1,0 +1,13 @@
+.snippet{
+    background: var(--clr-top);
+    border-radius: var(--bdr-radius);
+    border: var(--bdr-thickness) solid var(--clr-top-hover);
+    color: var(--clr-label) !important;
+    padding: 0.1em 0.25em;
+}
+
+.index{
+    font-size: 0.75em;
+    color: var(--clr-icon) !important;
+    margin-right: 1em;
+}

@@ -1,0 +1,16 @@
+:root{
+    color-scheme: dark;
+
+    --clr-bgd: hsl(0, 0%, 3%);
+    --clr-mid: hsl(0, 0%, 6%);
+    --clr-top: hsl(0, 0%, 9%);
+    --clr-top-hover: hsl(0, 0%, 12%);
+    --clr-top-active: hsl(0, 0%, 16%);
+
+    --clr-label: hsl(0, 0%, 100%);
+    --clr-info: hsl(0, 0%, 75%);
+    --clr-icon: hsl(0, 0%, 50%);
+
+    --bdr-radius: 6px;
+    --bdr-thickness: 2px;
+}

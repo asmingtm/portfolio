@@ -1,0 +1,43 @@
+.navigator{
+    cursor: pointer;
+
+    display: flex;
+    flex-shrink: 0;
+
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    border-radius: var(--bdr-radius);
+
+    gap: 0.25em;
+    padding: 0.25em 0.75em;
+    padding-right: 0.25em;
+}
+
+.navigator-label{
+    color: var(--clr-info);
+}
+.navigator-icon{
+    color: var(--clr-icon);
+
+    font-size: 1em;
+    padding: 0.25em;
+    border-radius: var(--bdr-radius);
+}
+.navigator-icon:hover{
+    background: var(--clr-top-hover);
+}
+
+.navigator:hover{
+    background: var(--clr-mid);
+}
+.navigator-active{
+    background: var(--clr-top);
+}
+.navigator-active:hover{
+    background: var(--clr-top-hover);
+}
+.navigator-active .navigator-icon:hover{
+    background: var(--clr-top-active);
+}

@@ -1,0 +1,14 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    
+    border-bottom: var(--bdr-thickness) solid var(--clr-mid);
+
+    overflow: auto;
+
+    gap: 0.25em;
+    padding: 0.5em;
+}
+.navbar::-webkit-scrollbar{
+    display: none;
+}

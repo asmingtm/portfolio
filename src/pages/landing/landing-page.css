@@ -1,0 +1,9 @@
+.landing{
+    display: flex;
+    flex-direction: column;
+
+    gap: 1em;
+}
+.ml-mid{
+    margin-left: 0.5em;
+}

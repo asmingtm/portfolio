@@ -1,0 +1,8 @@
+.one-line{
+    display: flex;
+    align-items: baseline;
+}
+
+.details, .details *{
+    color: var(--clr-info);
+}
