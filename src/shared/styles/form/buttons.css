@@ -1,0 +1,70 @@
+/* Base */
+.btn{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    padding: 0.8em;
+    background: var(--clr-solid);
+    border-radius: var(--bdr-radius);
+    border: var(--bdr-thick) solid transparent;
+    outline: none;
+    transition: all var(--ani-delay);
+    text-decoration: none;
+}
+.btn:hover{
+    scale: 1.02;
+}
+.btn:active{
+    scale: 0.98;
+}
+.btn:focus{
+    border-style: dashed;
+}
+
+/* Children */
+
+.btn-label, .btn-icon{
+    font-size: 1rem;
+}
+.btn-icon{
+    color: var(--clr-icon);
+    fill: var(--clr-icon);
+}
+
+/* Variants */
+
+.btn-solid:hover{
+    background: var(--clr-solid-raised);
+}
+.btn-solid:focus{
+    border-color: var(--clr-primary);
+}
+
+.btn-primary{
+    background: var(--clr-primary);
+    color: white;
+    * {
+        fill: white;
+        color: white;
+    }
+}
+.btn-primary:hover{
+    background: var(--clr-primary-raised);
+}
+.btn-primary:focus{
+    border-color: var(--clr-primary);
+}
+
+/* Types */
+
+.btn-circle{
+    border-radius: 99px;
+}
+.btn-float{
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    box-shadow: 2px 2px 10px hsl(0, 0%, 0%, 0.5);
+}

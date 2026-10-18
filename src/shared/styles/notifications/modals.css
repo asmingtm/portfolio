@@ -1,0 +1,80 @@
+/* Modal */
+.modal{
+    z-index: 99;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.5em;
+
+    position: fixed;
+    top: 50%; left: 50%;
+    translate: -50% -50%;
+    width: 100%; height: 100%;
+
+    background: hsla(0, 0%, 0%, 0.5);
+    backdrop-filter: blur(2px);
+    overflow: hidden;
+
+    animation: modal-open 100ms forwards;
+}
+
+/* Childrens */
+
+.action-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    gap: 0.5em;
+
+    > .btn{
+        flex-grow: 1;
+        height: 100%;
+    }
+
+    animation: modal-block-open 100ms forwards;
+}
+
+/* Variants */
+
+.modal > .block{
+    background: var(--clr-solid);
+    padding-bottom: 1.5em;
+    gap: 0.5em;
+
+    animation: modal-block-open 100ms forwards;
+
+    .block-title{
+        margin-bottom: 0.1em;
+    }
+    .block-title::before{
+        background: transparent;
+    }
+    .block-title, .block-summary{
+        width: 100%;
+    }
+}
+
+/* States */
+
+.modal-open{
+    display: flex;
+}
+.modal-closed{
+    display: none;
+}
+
+/* Animations */
+
+@keyframes modal-open {
+    from{
+        opacity: 0;
+    }
+}
+@keyframes modal-block-open {
+    from{
+        scale: 0;
+    }
+}

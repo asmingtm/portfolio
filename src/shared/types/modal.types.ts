@@ -1,0 +1,1 @@
+export type ModalVisibility = "open" | "closed";

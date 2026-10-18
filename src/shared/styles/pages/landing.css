@@ -1,0 +1,78 @@
+:root{
+    --tape-height: 25px;
+    --tape-swing: cubic-bezier(0.37, 0, 0.63, 1);
+    --tape-delay: 4s;
+}
+
+.page-landing{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    width: 100%;
+    height: 100%;
+}
+
+/* Tape strips */
+
+@keyframes swing-1 {
+    50%{
+        rotate: 13deg;
+        transform: translateY(8px);
+    }
+}
+@keyframes swing-2 {
+    50%{
+        rotate: -2deg;
+        transform: translateY(16px);
+    }
+}
+@keyframes swing-4 {
+    50%{
+        rotate: -14deg;
+        transform: translateY(16px);
+    }
+}
+
+.tape{
+    z-index: -99;
+    position: fixed;
+    left: 50%;
+    bottom: 10%;
+    translate: -50% 0;
+    width: 175%;
+    height: var(--tape-height);
+    background: repeating-linear-gradient(
+    to right,
+    rgb(138, 138, 6) 5px 50px,
+    rgb(0, 0, 0) 0 100px
+    );
+    box-shadow: 2px 2px 10px hsla(0, 0%, 0%, 0.5);
+    border-top: var(--bdr-thick) solid hsl(0, 0%, 10%);
+}
+#tape-1{
+    width: 150%;
+    rotate: 12deg;
+    animation: swing-1 4s infinite var(--tape-swing);
+    opacity: 0.8;
+}
+#tape-2{
+    left: 20%;
+    bottom: 9%;
+    rotate: -1deg;
+    animation: swing-2 5s infinite var(--tape-swing);
+}
+#tape-3{
+    width: 150%;
+    rotate: 12deg;
+    top: 10%;
+    animation: swing-1 4.4s infinite var(--tape-swing);
+}
+#tape-4{
+    left: 20%;
+    top: 12%;
+    rotate: -10deg;
+    animation: swing-4 4.8s infinite var(--tape-swing);
+}

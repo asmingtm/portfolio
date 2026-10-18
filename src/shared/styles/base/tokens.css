@@ -1,0 +1,28 @@
+:root{
+    color-scheme: dark;
+
+    --clr-bgd: hsl(0, 0%, 4%);
+
+    --clr-solid: hsl(0, 0%, 8%);
+    --clr-solid-raised: hsl(0, 0%, 10%);
+    --clr-solid-reduced: hsl(0, 0%, 6%);
+
+    --clr-label: hsl(0, 0%, 98%);
+    --clr-summary: hsl(0, 0%, 76%);
+    --clr-icon: hsl(0, 0%, 52%);
+
+    --clr-primary: hsl(260, 68%, 52%);
+    --clr-primary-raised: hsl(260, 68%, 62%);
+    
+    --clr-accent: hsl(260, 68%, 40%);
+    --clr-accent-reduced: hsl(260, 68%, 10%);
+
+    --clr-error: hsl(0, 68%, 52%);
+    --clr-error-raised: hsl(0, 68%, 62%);
+    --clr-error-reduced: hsl(0, 68%, 10%);
+
+    --bdr-thick: 1px;
+    --bdr-radius: 6px;
+
+    --ani-delay: 100ms;
+}
