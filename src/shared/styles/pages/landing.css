@@ -15,6 +15,12 @@
     height: 100%;
 }
 
+.page-landing > .block .block-title{
+    font-family: 'Chalk';
+    text-shadow: 0 0 0 transparent;
+    margin-bottom: 0.4em;
+}
+
 /* Tape strips */
 
 @keyframes swing-1 {
